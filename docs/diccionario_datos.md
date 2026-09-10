@@ -9,10 +9,9 @@ Este documento describe la estructura, el tipado y el significado de los datos a
 | `pais_destino` | string | — | SUNAT / Comtrade | País de destino de la exportación. En Comtrade, el código '0' se normalizó como 'MUNDO'. |
 | `fecha` | date | — | SUNAT | Primer día del mes que representa el valor (ej. 2005-01-01 para enero). |
 | `anio` | int | — | Comtrade | Año del periodo reportado en la extracción. |
+| `sector` | string | — | SUNAT / Comtrade | Categoría del producto exportado o nivel de agregación (ej. 'Total General', 'Café'). |
 | `valor_fob_usd` | double | USD | SUNAT / Comtrade | Valor FOB transaccional en dólares, estandarizado desde su escala original. |
 | `valor_fob_pen` | double | PEN (Soles) | Calculado | Equivalente en Soles (`valor_fob_usd` × `tasa_cambio_rellena`). Exclusivo de la tabla SUNAT. |
-
----
 
 ## Tabla de Referencia: `silver.tipo_cambio`
 
