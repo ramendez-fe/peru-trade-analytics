@@ -128,7 +128,7 @@ comercio-exterior-peru-de/
 ## Estado actual
 
 - [x] Fase 0 — Planteamiento y fuentes de datos verificadas
-- [ ] Fase 1 — Ingesta a Bronze (prueba real de las 3 fuentes)
+- [x] Fase 1 — Ingesta a Bronze (prueba real de las 3 fuentes sincronizadas al 2005)
 - [ ] Fase 2 — Limpieza y conciliación en Silver
 - [ ] Fase 3 — Modelado dimensional en Gold
 - [ ] Fase 4 — Orquestación en Databricks
@@ -145,6 +145,7 @@ comercio-exterior-peru-de/
 - El endpoint gratuito de UN Comtrade limita a 500 registros por consulta — el volumen completo del proyecto requiere la key gratuita de `comtradedeveloper.un.org`.
 - Los cuadros de SUNAT son archivos `.xlsx` pensados para lectura humana (no una API), por lo que cualquier cambio de formato en el portal puede romper el parseo — se documenta en `docs/diccionario_datos.md`.
 - El alcance temporal y geográfico de esta primera versión es acotado (ver `docs/01_planteamiento.md`); no pretende ser un reporte oficial de comercio exterior.
+- Escalabilidad del MVP: El proyecto actual se configuró como un MVP enfocado en el año 2005 y en el mercado del café. Gracias al diseño parametrizado en PySpark, el pipeline puede ser extrapolado a otros años (ej. 2015-2024) u otros sectores simplemente ajustando los parámetros de extracción en Bronze.
 
 ## Qué haría distinto en producción
 

@@ -24,9 +24,11 @@ El modelo de datos y la capa semántica están diseñados para alimentar las sig
 *Fórmula:* `HHI = SUM( (participacion_pais_%)^2 )` (Escala 0 - 10,000).
 4. **Auditoría Financiera:** Tipo de cambio promedio aplicado por año (métrica de control para validar el cruce de monedas).
 
-## 4. Alcance Temporal
+## 4. Alcance Temporal (MVP)
 
-**2015 - 2024 (10 años).** Este rango provee el volumen necesario para justificar el procesamiento distribuido frente a herramientas tradicionales de escritorio, y permite observar ciclos macroeconómicos completos.
+**2005 (Minimum Viable Product).** El diseño original de la arquitectura está preparado para ingerir, procesar y modelar décadas completas de información histórica y múltiples sectores a la vez. Sin embargo, para fines de este MVP (Producto Mínimo Viable) y demostración técnica *end-to-end*, el alcance se ha acotado a un año base (2005) con un producto específico (café) como prueba de concepto. 
+
+Al estar toda la tubería de datos (*pipeline*) 100% parametrizada desde la capa Bronze, este modelo es fácilmente **extrapolable y escalable a diferentes años, rangos temporales o múltiples partidas arancelarias** con tan solo modificar las variables de ingesta inicial, sin necesidad de reescribir la lógica de negocio de las capas Silver o Gold.
 
 ## 5. Ecosistema de Datos
 
