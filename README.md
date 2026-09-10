@@ -129,7 +129,7 @@ comercio-exterior-peru-de/
 
 - [x] Fase 0 — Planteamiento y fuentes de datos verificadas
 - [x] Fase 1 — Ingesta a Bronze (prueba real de las 3 fuentes sincronizadas al 2005)
-- [ ] Fase 2 — Limpieza y conciliación en Silver
+- [x] Fase 2 — Limpieza y conciliación en Silver
 - [ ] Fase 3 — Modelado dimensional en Gold
 - [ ] Fase 4 — Orquestación en Databricks
 - [ ] Fase 5 — Flujo de Git/GitHub (ramas, PRs, conflicto resuelto)
